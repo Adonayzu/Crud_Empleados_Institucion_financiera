@@ -28,7 +28,7 @@ function App() {
   const handleView = emp => setViewing(emp); // para abrir el modal y ver la informacion del empleado 
 
   return (
-    <Container >
+    <Container maxWidth="md" sx={{ mt: 20, backgroundColor: '#f5f5f5', padding: 3  }}>
       <Typography variant="h4" gutterBottom>Empleados</Typography>
       <Button variant="contained" onClick={handleAdd} sx={{ mb: 2 }}>Agregar Empleado</Button>
       <EmployeeTable
